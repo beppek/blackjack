@@ -17,5 +17,10 @@ namespace BlackJack.model.rules
         {
             return new AmericanNewGameStrategy();
         }
+
+        public IAdvantageStrategy GetAdvantageRule()
+        {
+            return new DealerAdvantageStrategy();
+        }
     }
 }
