@@ -13,13 +13,14 @@ namespace BlackJack.model
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
         private rules.IAdvantageStrategy m_advantageRule;
-
+        private List<IObserver> m_observers;
 
         public Dealer(rules.RulesFactory a_rulesFactory)
         {
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
             m_advantageRule = a_rulesFactory.GetAdvantageRule();
+            m_observers = new List<IObserver>();
         }
 
         public bool NewGame(Player a_player)
@@ -75,6 +76,7 @@ namespace BlackJack.model
             c = m_deck.GetCard();
             c.Show(isVisible);
             a_player.DealCard(c);
+            NotifyObservers();
         }
 
         public bool IsDealerWinner(Player a_player)
@@ -84,7 +86,7 @@ namespace BlackJack.model
 
         public bool IsGameOver()
         {
-            if (m_deck != null && /*CalcScore() >= g_hitLimit*/ m_hitRule.DoHit(this) != true)
+            if (m_deck != null && m_hitRule.DoHit(this) != true)
             {
                 return true;
             }
@@ -94,6 +96,19 @@ namespace BlackJack.model
         public int getMaxScore()
         {
             return g_maxScore;
+        }
+
+        public void AddCardObserver(IObserver a_observer)
+        {
+            m_observers.Add(a_observer);
+        }
+
+        public void NotifyObservers()
+        {
+            foreach (var observer in m_observers)
+            {
+                observer.Update();
+            }
         }
     }
 }
