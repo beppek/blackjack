@@ -12,8 +12,8 @@ namespace BlackJack
             model.Game g = new model.Game();
             view.IView v = new view.SimpleView(); // new view.SwedishView();
 
-            model.IObserver po = new controller.CardObserver(g, v);
-            g.AddCardObserver(po);
+            model.IObserver co = new controller.CardObserver(g, v);
+            g.AddCardObserver(co);
 
             controller.PlayGame ctrl = new controller.PlayGame();
 
