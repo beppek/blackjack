@@ -23,7 +23,7 @@
           <association
             Id="a33b86ad-af42-44f3-bc97-121354a882c3"
             isDerived="false"
-            sourceEndRoleName="IView"
+            sourceEndRoleName=""
             targetEndRoleName="MenuSelection"
             isLeaf="false"
             isAbstract="false">
@@ -35,7 +35,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="2a818f87-6ba3-4416-99f3-6ee338605eff"
-                  name="IView"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

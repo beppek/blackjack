@@ -33,13 +33,6 @@
               LastKnownName="RulesFactory"
               LastKnownLocation="Package2_0950.uml" />
           </dependency>
-          <dependency
-            Id="9643e6d1-2696-4530-a3c1-402253e9eeb2">
-            <interfaceMoniker
-              Id="50ce6770-bafc-48f0-813c-39bb2bc23338"
-              LastKnownName="IObserver"
-              LastKnownLocation="Package1_0950.uml" />
-          </dependency>
         </suppliersInternal>
         <generalsInternal>
           <generalization
@@ -227,6 +220,127 @@
                   <upperValueInternal>
                     <literalString
                       Id="48f08848-ebfa-43bc-a6aa-b3a51360f5b9"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="699d23c9-9823-4677-ab0a-0f17201ea919"
+            isDerived="false"
+            sourceEndRoleName="Dealer"
+            targetEndRoleName="IAdvantageStrategy"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="6cda2127-b7b2-45c0-b5fd-624f5bd206ed"
+              LastKnownName="IAdvantageStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="086dbdec-b856-4cf7-9e5a-e4ba9f7d3578"
+                  name="Dealer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="842fc5d5-7850-43e4-acf9-774268389f9a"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="da76f735-5259-4222-b1f8-c16feaa4063c"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e9b69d5-f223-40a2-96c9-e6822bad138d"
+                  name="IAdvantageStrategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b536585a-78c6-402a-a9e5-0c7a37a4f92d"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5ccb40bf-e967-4ef2-a116-ec6e64f56933"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7ce781f6-8d35-44c5-9c4f-1a05ad89af3c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="List&lt;IObserver&gt;"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="50ce6770-bafc-48f0-813c-39bb2bc23338"
+              LastKnownName="IObserver"
+              LastKnownLocation="Package1_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4a0bc21-cde8-45a0-88e9-26af301164b3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="322ffcdf-22d4-4bab-ac06-7108299c3f25"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="aed52daf-327e-44a6-b794-02e3fb4eb42e"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e9c7855-d34e-40fb-85e6-fc63a23d3961"
+                  name="List&lt;IObserver&gt;"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3fce55bc-6646-469e-b14a-1d2bbad08d4f"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2981cd7c-b1ad-44d2-acae-9ad388729a99"
                       name="Upper" />
                   </upperValueInternal>
                 </memberEnd>

@@ -26,6 +26,13 @@
               LastKnownName="Game"
               LastKnownLocation="Package1_0950.uml" />
           </dependency>
+          <dependency
+            Id="5585f81e-79ac-42f1-b028-c759071ccfd2">
+            <enumerationMoniker
+              Id="70350a77-9678-44d0-aaaa-6b77c2f397ad"
+              LastKnownName="MenuSelection"
+              LastKnownLocation="Package_0950.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
@@ -44,21 +51,129 @@
               LastKnownName="IObserver"
               LastKnownLocation="Package1_0950.uml" />
           </interfaceRealization>
-          <dependency
-            Id="de22e565-d0ac-495e-83f4-0867b7a425e1">
-            <interfaceMoniker
-              Id="daa2b7a8-1024-4de0-8428-0008d3ffa08b"
-              LastKnownName="IView"
-              LastKnownLocation="Package_0950.uml" />
-          </dependency>
-          <dependency
-            Id="871641e2-1922-49e9-9398-88e03796045d">
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="bcdfe217-d6b8-4992-a2fa-68adc75e7233"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="m_game"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="08739ce8-677c-41a8-b0cf-e6796231e3a0"
               LastKnownName="Game"
               LastKnownLocation="Package1_0950.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7fc35c0-ecc6-415b-9c5e-ba391e5d81ea"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7f5a655b-df80-4963-a8e1-3e9d920126fd"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e4d1e874-47cf-45a7-8796-42dbb125c34d"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63706bf7-311e-4ac5-b383-c3b724223820"
+                  name="m_game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2d5c04bb-9bfc-4ea1-a8e3-42e43083b9b4"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bd28e7e1-0a77-4f7a-8ed2-06d0f58a0b6d"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="70b90f90-f8ad-4e0c-b9e4-24ce3c8ef00e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="m_view"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="daa2b7a8-1024-4de0-8428-0008d3ffa08b"
+              LastKnownName="IView"
+              LastKnownLocation="Package_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c7e981f-a5b8-4d7d-b364-701137258d58"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8fdebacb-d7d7-4a21-849e-473d117ee088"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="05f542da-ca5f-4837-beb9-918c5d2604f1"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f9d831e-c2d4-436b-83fa-e00cd683098d"
+                  name="m_view"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="30bc8c88-1723-4861-ace7-73167d70f155"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="28fab03e-1bec-4250-9e28-eeb14deefe7e"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
